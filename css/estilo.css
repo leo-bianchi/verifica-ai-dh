@@ -10,7 +10,6 @@ body{
     /* background-image: linear-gradient(150deg, rgb(0, 0, 0) -13%, rgba(20, 100, 40), rgba(0, 0, 154, 0.6) 65%); */
     /* background-image: linear-gradient(155deg, rgb(0, 0, 0) -5%, #24a1d3, rgba(0, 0, 154, 0.6) 65%); */
     background-image: linear-gradient(155deg, rgb(0, 0, 0) -13%, rgb(49,148,207), rgba(0, 0, 154, 0.6) 65%);
-    overflow-x: hidden;
 }
 
 #topo{
@@ -51,7 +50,7 @@ footer p a {
 
 .head-title{
 	font-size: 3rem;
-    font-weight: 300rem;
+    font-weight: 300;
     line-height: 1.2;
 }
 
@@ -367,7 +366,7 @@ i{
 }
 
 #responsivo-menor{
-    width: 20px;
+    width: 120px;
 }
 
 #section-modal{
@@ -431,11 +430,6 @@ i{
     padding-top: 0;
 }
 
-.h2-vaza{
-    width: 100%;
-    font-size: 2rem;
-}
-
 .atual{
     font-weight: bold;
 }
@@ -452,12 +446,6 @@ iframe{
     box-shadow: 0 5px 30px rgba(0,0,0,0.7);
 }
 
-@media (max-width: 768px){
-    .vaza-title{
-        font-size: 1.9rem;
-        padding-left: 3% !important;
-    }
-}
 
 .comprometidos{
     margin-left: 50px;
@@ -593,36 +581,52 @@ table{
     text-decoration: underline;
 }
 
+.vaza-title{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.ip-text{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.sub-titulo{
+    font-size: 2.3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.sub-titulo-vaza{
+    font-size: 2.1rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.ip-ver{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
 
 @media screen and (max-width: 991px){
     .quem-somos-div{
         flex-direction: column;
         justify-content: center;
     }
-
+    
     .quem{
         width: 395px;
         margin: 0 auto;
         margin-bottom: 20px;
         padding: 0 7px;
     }
-    
-    header{
-        position: relative;
-        width: 100%;
-        z-index: 777;
-    }
-    
-    nav{
-        width: 100%;
-    }
-    
-    .navbar-nav{
-        height: 100vh;
-    }
 }
 
-/* footer{
-    position: relative;
-    z-index: 10; 
-} */
+@media (max-width: 768px){
+    .vaza-title{
+        padding-left: 4% !important;
+    }
+}

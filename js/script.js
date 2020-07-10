@@ -185,7 +185,7 @@ const showBreach = function showMessage(breachs) {
                 const messageCard = `
                         <div class="result-meio caixa mb-5">
                             <span class="breachName">${info.Name}</span>
-                            <p>Data do vazamento: ${reverse(info.BreachDate)}</p>
+                            <p>Data do vazamento: ${reverse(info.BreachDate)}.</p>
                             <a href="https://${info.Domain}" target="_blank"><img class="img-fluid" src="${info.LogoPath}" width=115 height=100></a>
                             <p>${info.Description}</p>
                             <div class="d-flex justify-content-center flex-column">
@@ -239,38 +239,4 @@ async function getBreachs(e) {
     if (response.status === 404) {
         showNotBreached();
     }
-}
-
-const body = document.querySelector("body");
-const btnNav = document.querySelector(".btn-nav");
-const header = document.querySelector("header");
-const nav = document.querySelector("nav");
-let ativado = false;
-
-btnNav.addEventListener("click", ()=>{
-    if (ativado == false){
-        header.style.position = "relative";
-        header.style.height = "100vh";
-        nav.style.position = "fixed";
-        body.style.overflow = "hidden";
-        ativado = true;
-    } else {
-        nav.style.position = "relative";
-        header.style.height = "auto";
-        body.style.overflow = "scroll";
-        ativado = false;
-    }
-});
-
-let links = document.querySelectorAll(".nav-item");
-
-for (let i = 0; i < links.length; i++) { 
-    let link = links[i]; 
-    link.addEventListener("click", function() { 
-        nav.style.position = "relative";
-        document.getElementById("nav-principal").classList.remove("show");
-        header.style.height = "auto";
-        body.style.overflow = "scroll";
-        ativado = false;
-    }); 
 }
