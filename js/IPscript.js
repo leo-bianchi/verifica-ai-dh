@@ -25,7 +25,6 @@ async function getLocation(e){
     const request = new Request(url);
     const response = await fetch(request);
     const result = await response.json();
-    console.table(result);
 
     showInfo(result);
 };
