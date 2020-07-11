@@ -43,7 +43,7 @@ function showInfo(result){
             <div class="pais d-flex justify-content-between bordered align-items-center">
                 <h6 class="m-2">IP:</h6>
                 <div class="meio-div"></div>
-                <span class="m-2">${result.ip}</span>
+                <span class="m-2 text-wrap">${result.ip}</span>
             </div>
             <div class="pais d-flex justify-content-between bordered align-items-center">
                 <h6 class="m-2">País:</h6>
