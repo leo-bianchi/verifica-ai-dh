@@ -22,7 +22,7 @@ async function getLocation(e){
     const ip = document.getElementById("ip-value").value;
     const url = `https://ipapi.co/${ip}/json/`;
     
-    const request = new Request(url);
+    const request = new Request(url)
     const response = await fetch(request);
     const result = await response.json();
 
